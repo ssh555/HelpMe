@@ -13,6 +13,50 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelID">
+     <property name="text">
+      <string>id</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelName">
+     <property name="text">
+      <string>name</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelHTPDate">
+     <property name="text">
+      <string>HTPDate</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelphoto">
+     <property name="text">
+      <string>photo</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelage">
+     <property name="text">
+      <string>age</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelIDCardNum">
+     <property name="text">
+      <string>IDCardNum</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

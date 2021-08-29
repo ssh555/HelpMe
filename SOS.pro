@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,12 +20,14 @@ SOURCES += \
     loginform.cpp \
     main.cpp \
     patientform.cpp \
+    sqlpatientsmgr.cpp \
     widget.cpp
 
 HEADERS += \
     historicaldataform.h \
     loginform.h \
     patientform.h \
+    sqlpatientsmgr.h \
     widget.h
 
 FORMS += \

@@ -26,9 +26,10 @@ void SqlPatientsMgr::ConnectSqlPatients(){
     //添加MySQL数据库
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
     //连接数据库
-    db.setHostName("127.0.0.1"); //数据库服务器IP
-    db.setUserName("root"); //数据库用户名
-    db.setPassword("hongyuangqq123@"); //密码
+    db.setHostName("10.197.119.11"); //数据库服务器IP
+    db.setPort(3306);//设置端口
+    db.setUserName("projectHelpMe"); //数据库用户名
+    db.setPassword("123456"); //密码
     db.setDatabaseName("helpme_patientsdata"); // 使用哪个数据库
 
     //打开数据库
@@ -38,6 +39,7 @@ void SqlPatientsMgr::ConnectSqlPatients(){
     }
     isConnectSql = true;
     query = new QSqlQuery;
+    qDebug() << "已连接至数据库";
 }
 
 int* SqlPatientsMgr::StrListToIntArr(QStringList list){

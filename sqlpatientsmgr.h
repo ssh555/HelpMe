@@ -67,7 +67,7 @@ private:
 
 
     //连接数据库
-    void ConnectSqlPatients();//返回TRUE表示成功连接  FALSE表示连接失败
+    void ConnectSqlPatients(QString ip,qint16 port);//返回TRUE表示成功连接  FALSE表示连接失败
     //根据某一个数据及其在数据库中的名字查询相关数据，返回QList<PatientData>*
     QList<PatientData>* SelectPatient(QString dataType,QString data);
     //删除某行的所有数据

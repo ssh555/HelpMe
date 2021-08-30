@@ -19,15 +19,15 @@
 //private
 SqlPatientsMgr::SqlPatientsMgr(QObject *parent) : QObject(parent)
 {
-    ConnectSqlPatients();
+    ConnectSqlPatients("10.195.76.197",3306);
 }
 
-void SqlPatientsMgr::ConnectSqlPatients(){
+void SqlPatientsMgr::ConnectSqlPatients(QString ip,qint16 port){
     //添加MySQL数据库
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
     //连接数据库
-    db.setHostName("10.197.119.11"); //数据库服务器IP
-    db.setPort(3306);//设置端口
+    db.setHostName(ip); //数据库服务器IP
+    db.setPort(port);//设置端口
     db.setUserName("projectHelpMe"); //数据库用户名
     db.setPassword("123456"); //密码
     db.setDatabaseName("helpme_patientsdata"); // 使用哪个数据库

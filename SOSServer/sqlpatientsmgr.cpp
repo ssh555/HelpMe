@@ -19,7 +19,7 @@
 //private
 SqlPatientsMgr::SqlPatientsMgr(QObject *parent) : QObject(parent)
 {
-    ConnectSqlPatients("10.195.76.197",3306);
+    ConnectSqlPatients("127.0.0.1",3306);
 }
 
 void SqlPatientsMgr::ConnectSqlPatients(QString ip,qint16 port){

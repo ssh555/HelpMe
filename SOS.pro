@@ -30,7 +30,6 @@ SOURCES += \
     widgethistory.cpp \
     clientwidget.cpp \
     historicaldataform.cpp \
-    main.cpp \
     sqlpatientsmgr.cpp \
     widgetselect.cpp
 
@@ -49,6 +48,7 @@ HEADERS += \
     historicaldataform.h \
     sqlpatientsmgr.h \
     widgetselect.h
+
 
 FORMS += \
     loginform.ui \

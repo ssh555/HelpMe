@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-#include "patientform.h"
-#include "ui_patientform.h"
 
-PatientForm::PatientForm(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::PatientForm)
-{
-    ui->setupUi(this);
-}
-
-PatientForm::~PatientForm()
-{
-    delete ui;
-}
-=======
 #include "patientform.h"
 #include "ui_patientform.h"
 
@@ -46,4 +31,3 @@ void PatientForm::on_PatientPic_clicked()
 {
     emit Signal_Select_To_Current();
 }
->>>>>>> tmp

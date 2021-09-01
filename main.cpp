@@ -1,24 +1,10 @@
-<<<<<<< HEAD
-#include "widget.h"
-#include <clientwidget.h>
 
-#include <QApplication>
-
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-   Widget w;
-   w.show();
-    // ClientWidget cw;
-    // cw.show();
-    return a.exec();
-}
-=======
 #include "widget.h"
 #include "serialsender.h"
 #include "serialreceiver.h"
 #include "widgetselect.h"
 #include <QApplication>
+#include <clientwidget.h>
 
 int main(int argc, char *argv[])
 {
@@ -30,7 +16,7 @@ int main(int argc, char *argv[])
     widgetSelect->setWindowTitle("“救救我”无人值守监控系统");
     widgetSelect->setStyleSheet("{image: url(:./picture/background.jpg);}");//背景图
     widgetSelect->show();
-
+    // ClientWidget cw;
+    // cw.show();
     return a.exec();
 }
->>>>>>> tmp
